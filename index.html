@@ -3,21 +3,36 @@
   Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
 -->
 <!DOCTYPE html>
-<html>
+<html id="home">
   <head>
     <meta charset="utf-8" />
     <title>A simple Three.JS App</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>A simple three.js app</h1>
+    <header id="navbar">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#modeling">Modeling</a>
+        <a href="#texturing">Texturing</a>
+        <a href="#rendering">Rendering</a>
+        <a href="#footer">Contact</a>
+      </nav>
     </header>
 
-    <main>
-      <div id="container3D"></div>
-    </main>
+    <div class="grid-hero" id="hero"> 
+      <div class="flow hero-header">
+        <h1>Learn 3D</h1>
+        <h2>This tutorial will show you the basics of 3D</h2>
+      </div>
+      <div class="flow" id="container3D"></div>
+    </div>
+
+    <div class="modeling" id="modeling">s</div>
 
     <script type="module" src="js/main.js"></script>
+    <script>window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});</script>
+    
+    <footer></footer>
   </body>
 </html>

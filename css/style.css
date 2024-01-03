@@ -1,26 +1,72 @@
-body {
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  background-color: #000;
+* {
+  font-family: Roboto, system-ui, sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
-header {
-  margin-top: 3em;
-  text-align: center;
+body {
+  margin: 0;
+  background-color: #000;
   color: white;
 }
 
-header h1 {
-  font-size: 2em;
-  font-weight: 900;
+.hero-header {
+  color: white;
+  padding-left: 4rem;
 }
 
+.grid-hero {
+  height: 100svh;
+  display: grid;
+  gap: 4rem;
+  margin: 8rem;
+  margin-bottom: 0;
+  grid-template-columns: 60% 1fr;
+}
+
+h1 { font-size: 4.25rem; font-weight: 900;}
+h2 { font-size: 2.75rem; font-weight: 600;}
+h3 { font-size: 1.625rem; font-weight: 300;}
+
+
+
 #container3D canvas {
-  width: 20rem;
-  aspect-ratio: 1;
-  position: absolute;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Sticky navbar */
+#navbar {
+  position: fixed;
   top: 0;
-  left: 25rem;
+  width: 100%;
+  background-color: #32373c;
+  z-index: 10;
+}
+
+#navbar nav {
+  display: flex;
+  justify-content: right;
+  padding: 10px 20px;
+}
+
+#navbar nav a {
+  text-decoration: none;
+  color: white;
+  padding-left: 4em;
+}
+
+#navbar nav a:last-child {
+  padding-right: 4em;
+}
+
+#navbar nav a:hover {
+  color: rgb(186, 63, 247);
+}
+
+.active {
+  background-color: #03A9F4;
+}
+
+.modeling {
+  height: 20rem;
 }
