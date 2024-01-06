@@ -45,26 +45,32 @@ h3 { font-size: 1.625rem; font-weight: 300;}
 
 #navbar nav {
   display: flex;
-  justify-content: right;
-  padding: 10px 20px;
+  align-items: center;
+  height: 4.4em;
+  padding: 0 1em;
 }
 
 #navbar nav a {
   text-decoration: none;
   color: white;
-  padding-left: 4em;
+  margin-right: 4em;
 }
 
-#navbar nav a:last-child {
-  padding-right: 4em;
+#navbar nav a:not(.fav) {
+  font-size: 1.35rem;
+}
+
+#navbar nav a.fav {
+  margin-right: auto;
+  margin-left: 2em;
+}
+
+#navbar nav a.fav img {
+  height: 4em;
 }
 
 #navbar nav a:hover {
-  color: rgb(186, 63, 247);
-}
-
-.active {
-  background-color: #03A9F4;
+  color: rgb(233, 160, 12);
 }
 
 .modeling {
