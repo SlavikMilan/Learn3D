@@ -2,14 +2,14 @@
     'use strict';
 
     var initializeSlideshows = function() {
-        var sliders = document.querySelectorAll('.testimonial-slider');
+        var sliders = document.querySelectorAll('.slider');
 
         sliders.forEach(function(slider) {
             var tnsSlider = tns({
                 container: slider,
                 items: 1,
                 axis: "horizontal",
-                controlsContainer: slider.parentElement.querySelector('.testimonial-nav'),
+                controlsContainer: slider.parentElement.querySelector('.nav'),
                 swipeAngle: false,
                 speed: 700,
                 nav: true,
