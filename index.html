@@ -76,7 +76,7 @@
             <div class="col-lg-6">
                 <h2 class="section-title"><a href="https://www.blender.org/download/releases/4-0/">Blender 4.0</a></h2>
                 <p>Blender je multifunkční grafický program, který je určen pro modelování, texturování, rigging,
-                    fyzikální simulace, renderování a spoustu dalších potřebných věcí, nezbytných pro tvorbu nejen her,
+                    fyzikální simulace, renderování a spoustu dalších potřebných věcí, nezbytných pro tvorbu nejen her a
                     filmů, ale také modelů pro 3D tisk. </p>
 
                 <div class="row my-5">
@@ -88,7 +88,7 @@
                             <h3>Výhody</h3>
                             <ul class="list-unstyled custom-list">
                                 <li>Všestrannost a rozmanitost nástrojů</li>
-                                <li>Open-source a zdarma</li>
+                                <li>Otevřený zdrojový kód a zdarma</li>
                                 <li>Aktivní a rozsáhlá komunita</li>
                                 <li>Multiplatformní podpora</li>
                             </ul>
@@ -150,9 +150,9 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V prvním kroku vytvoříme plane (kontextové menu vyvoláme pomocí ctrl+A a
-                                                zvolíme mesh a poté plane), přepneme se do editovacího režimu pomocí TAB
-                                                a nakonec plane rozdělíme pomocí loop cutů (ctrl+R) podle obrázku.</p>
+                                            <p>V prvním kroku vytvoříme Plochu (kontextové menu vyvoláme pomocí ctrl+A a
+                                                zvolíme Síť a poté Plocha), přepneme se do editovacího režimu pomocí TAB
+                                                a nakonec Plochu rozdělíme pomocí Výřezu smyčkou (ctrl+R) podle obrázku.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -172,7 +172,7 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V tomto kroku přidáme další loop cuty a odstraníme nepotřebné části
+                                            <p>V tomto kroku přidáme další Výřez smyčkou a odstraníme nepotřebné části
                                                 geometrie.</p>
                                         </blockquote>
 
@@ -194,7 +194,7 @@
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
                                             <p>V pravé části obrazovky pod ikonkou modrého klíče nalezneme sekci
-                                                modifikátorů. V této sekci přidáme "Subdivision Surface Modifier".</p>
+                                                modifikátorů. V této sekci přidáme "Dělit povrch" modifikátor.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -214,7 +214,7 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V sekci Modifiers přidáme Mirror, Solidify a Bevel. Díky tomuto nastavení
+                                            <p>V sekci Modifiers přidáme Zrcadlit, Ztloustnout a Zaobalit. Díky tomuto nastavení
                                                 dosáhneme požadovaných výsledků.</p>
                                         </blockquote>
 
@@ -236,7 +236,7 @@
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
                                             <p>Nyní můžeme celý model zduplikovat, zmenšit a napasovat na odpovídající
-                                                místo. S modelem se pohybuje v Object modu, do kterého se opět přesuneme
+                                                místo. S modelem se pohybuje v Objektovém režimu, do kterého se opět přesuneme
                                                 pomočí TABu.<br>
                                                 Ojekty se zmenšují pomoci klávesy S, hýbat se s nimi dá pomocí tlačítka
                                                 G. Při těchto operacích také můžeme určit pro kterou osu se operace
@@ -290,8 +290,8 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V prvním kroku vytvoříme UV Sphere (kontextové menu vyvoláme pomocí
-                                                ctrl+A a zvolíme mesh a poté UV sphere).</p>
+                                            <p>V prvním kroku vytvoříme UV Koule (kontextové menu vyvoláme pomocí
+                                                ctrl+A a zvolíme Síť a poté UV Koule).</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -311,7 +311,7 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>Z UV Sphere ponecháme pouze vrchní část. Po odmazání nám zbyte otvor, ten
+                                            <p>Z UV Koule ponecháme pouze vrchní část. Po odmazání nám zbyte otvor, ten
                                                 zaplníme tak, že označíme celý obvod vzniklého otvoru, stiskneme F3 a
                                                 vyhledáme "Grid Fill".</p>
                                         </blockquote>
@@ -333,8 +333,8 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>Označíme vzniklý prostřední face v Edit modu a stiskneme klávesu E pro
-                                                Extrude. Extrude provedeme dvakrát, abychom dosáhli výsledku jako je
+                                            <p>Označíme vzniklý prostřední plochu v Režimu úprav a stiskneme klávesu E pro
+                                                Extrude (v češtině Vysunutí oblasti). Vysunutí oblasti provedeme dvakrát, abychom dosáhli výsledku jako je
                                                 tomu na obrázku.</p>
                                         </blockquote>
 
@@ -355,10 +355,10 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V tomto kroce stačí spodní face zvětšit pomocí S pro Scale, dále
-                                                potřebujeme vytvořit prohlubeň, té dosáhneme tak, že provedeme Inset
-                                                klávesou I a vzniklý menší face zanoříme do objektu pomocí G. <br>
-                                                Ve finále už jen stačí aplikovat Subdivision Surface modifikátor.</p>
+                                            <p>V tomto kroce stačí spodní plochu zvětšit pomocí S pro Scale (v češtině Změnit velikost), dále
+                                                potřebujeme vytvořit prohlubeň, té dosáhneme tak, že provedeme Inset (v češtině Vsazení ploch)
+                                                klávesou I a vzniklý menší plochu zanoříme do objektu pomocí G. <br>
+                                                Ve finále už jen stačí aplikovat Dělit povrch modifikátor.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -407,8 +407,8 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V první části je nutné opět vytvořit a upravit plane. Rozdělíme jí pomocí
-                                                loop cuts a přidáme mirror modifikátor.</p>
+                                            <p>V první části je nutné opět vytvořit a upravit Plochu. Rozdělíme jí pomocí
+                                                Výřezu smyčkou a přidáme Zrcadlit modifikátor.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -430,7 +430,7 @@
                                         <blockquote class="mb-5">
                                             <p>V tomto kroku pouze upravíme tvar objektu, aby odpovídal kovové části
                                                 objektu, kterou máme již vymodelovanou. Tvar upravíme tak, že posuneme
-                                                pomocí klávesy G potřebné body (anglicky vertices)</p>
+                                                pomocí klávesy G potřebné vrcholy (anglicky vertices)</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -451,7 +451,7 @@
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
                                             <p>Na závěr přidáme modifikátory, které ucelí vzhled modelu. Přidáme
-                                                Subdivision Surface, Solidify a Bevel.</p>
+                                                Dělit povrch, Ztloustnout a Zaobalit.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -500,7 +500,7 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>Začneme opět s plane. Objektu na obrázku docílíme pomocí Extrude na delší
+                                            <p>Začneme opět s Plochou. Objektu na obrázku docílíme pomocí Vysunutí oblasti na delší
                                                 hrany.</p>
                                         </blockquote>
 
@@ -522,7 +522,7 @@
 
                                     <div class="content-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>V tomto kroku přidáme Bevel a Solidify modifikátor.</p>
+                                            <p>V tomto kroku přidáme Zaobalit a Ztloustnout modifikátor.</p>
                                         </blockquote>
 
                                         <div class="renderPicture">
@@ -708,11 +708,10 @@
 
                                     <div class="content-block text-center">
                                         <blockquote>
-                                            <p>Sampling slouží k ovlivnění kvality výsledného obrazu a rychlosti procesu
-                                                renderování. Sampling určuje, jak často jsou počítány informace o
+                                            <p>Vzorkování slouží k ovlivnění kvality výsledného obrazu a rychlosti procesu
+                                                renderování. Vzorkování určuje, jak často jsou počítány informace o
                                                 osvětlení a materiálech. Pod tímto nastavením se dá také najít Adaptivní
-                                                Samplování a počet odrazů světla v závislosti na různé materiály (Light
-                                                Paths).</p>
+                                                Vzorkování a počet odrazů světla v závislosti na různé materiály (Světelné Cesty).</p>
                                         </blockquote>
 
                                         <div class="renderPicture"
@@ -760,7 +759,7 @@
                                     <div class="content-block text-center">
                                         <blockquote>
                                             <p>Denoise můžeme také uplatnit tímto způsobem: V menu scény "ViewLayer"
-                                                rozklikneme Passess>Data a zaškrtneme "Denoising Data". Poté můžeme
+                                                rozklikneme Průchody>Data a zaškrtneme "Denoising Data". Poté můžeme
                                                 pokračovat do záložky horní části obrazovky "Compositing" a pomocí
                                                 klávesy F3 přidat "Denoise".</p>
                                         </blockquote>
@@ -783,7 +782,7 @@
                                     <div class="content-block text-center">
                                         <blockquote>
                                             <p>Na závěr už jen stačí render zahájit, to můžeme udělat v záložce
-                                                Render>Render Image. Stejného výsledku můžeme dosáhnout stisknutím
+                                                Render>Render Obrázku. Stejného výsledku můžeme dosáhnout stisknutím
                                                 klávesy F12.</p>
                                         </blockquote>
 
