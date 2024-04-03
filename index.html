@@ -13,7 +13,7 @@
     <meta name="author" content="Milan Slavik">
     <link rel="shortcut icon" href="favicon.png">
 
-    <meta name="keywords" content="bootstrap, bootstrap4"/>
+    <meta name="keywords" content="3D, modeling, texturing, rendering, course, modelování, texturování, renderování, kurz, Blender"/>
 
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -851,7 +851,18 @@
 <script src="js/tiny-slider.js"></script>
 <script src="js/custom.js"></script>
 <script type="module" src="js/main.js"></script>
-<script>window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'), {});</script>
+<script>
+    window.addEventListener("popstate", () => {
+    let url = window.location.href;
+    url = url.split('#')[0];
+  
+    if (!url.endsWith("/Learn3D/")) {
+      url += "Learn3D/";
+    }
+  
+    window.history.pushState({}, "", url);
+  });
+  </script>
 </body>
 
 </html>
